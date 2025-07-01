@@ -11,6 +11,7 @@ app = FastAPI(title="Twitter Sentiment Analysis API")
 origins = [
     "http://localhost",
     "http://localhost:3000",  # Default port for Next.js
+    "https://ml-aat-2-shreenivas18s-projects.vercel.app/",
     "*" # Allow all for simplicity in development
 ]
 
