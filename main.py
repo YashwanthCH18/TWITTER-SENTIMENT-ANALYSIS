@@ -8,12 +8,8 @@ from fastapi.middleware.cors import CORSMiddleware
 app = FastAPI(title="Twitter Sentiment Analysis API")
 
 # Add CORS middleware to allow requests from your future frontend
-origins = [
-    "http://localhost",
-    "http://localhost:3000",  # Default port for Next.js
-    "https://ml-aat-2-shreenivas18s-projects.vercel.app/",
-    "*" # Allow all for simplicity in development
-]
+# Allow all origins for simplicity in development and personal projects.
+origins = ["*"]
 
 app.add_middleware(
     CORSMiddleware,
